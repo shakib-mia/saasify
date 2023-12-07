@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- Navbar Section -->
     <nav
-      class="absolute top-0 left-0 right-0 text-white px-[7.5rem] mx-auto flex justify-between py-[2.44rem] items-center"
+      class="container absolute left-0 right-0 top-0 mx-auto flex items-center justify-between py-[2.44rem] text-white"
     >
+      <!-- Logo -->
       <p class="text-sm font-semibold">Saasify</p>
+
+      <!-- Nav Links -->
       <ul class="flex gap-[2.69rem]">
         <li class="text-xs">
           <a href="#">Product</a>
@@ -30,43 +34,188 @@
         </li>
       </ul>
 
+      <!-- Sign up Button -->
       <button
-        class="px-[1.88rem] py-[0.75rem] rounded-full bg-white text-black font-semibold text-sm"
+        class="rounded-full bg-white px-[1.88rem] py-[0.75rem] text-sm font-semibold text-black"
       >
         Sign up
       </button>
     </nav>
+
+    <!-- Header Section -->
     <header
-      class="h-[73rem] bg-no-repeat bg-contain pt-[13.69rem] px-[11rem]"
+      class="bg-contain bg-no-repeat pt-[13.69rem]"
       style="background-image: url(./assets/images/backgrounds/header-bg.jpg)"
     >
-      <h1 class="text-7xl font-extrabold text-white capitalize text-center">
-        The fastest way for startups to do any analysis
-      </h1>
-      <p
-        class="w-1/2 text-center mx-auto my-[2.5rem] text-lg font-medium text-white opacity-80"
-      >
-        Equals is the only spreadsheet with built-in connections to any
-        database, versioning, and collaboration.
-      </p>
-
-      <div
-        class="w-1/2 mx-auto bg-white py-[0.44rem] rounded-full flex justify-between gap-[1.5rem] pl-[1.18rem] pr-[0.37rem]"
-      >
-        <img src="./assets/icons/email.svg" alt="email" class="w-[1.325rem]" />
-        <input
-          type="email"
-          name=""
-          id=""
-          placeholder="Enter Your Email"
-          class="placeholder:text-black placeholder:opacity-70 w-auto focus:outline-none"
-        />
-        <button
-          class="gradient rounded-full py-[1rem] px-[1.875rem] inline-block w-fit text-sm font-medium text-white"
+      <!-- Header Text -->
+      <div class="mx-auto w-[62rem]">
+        <h1
+          class="text-center text-8xl font-extrabold capitalize tracking-[-0.135rem] text-white"
         >
-          Start for Free
-        </button>
+          The fastest way for startups to do any analysis
+        </h1>
+        <!-- Header Paragraph -->
+        <p
+          class="mx-[12.9rem] my-[2.5rem] text-center text-lg font-medium text-white opacity-80"
+        >
+          Equals is the only spreadsheet with built-in connections to any
+          database, versioning, and collaboration.
+        </p>
+
+        <!-- Newsletter -->
+
+        <div
+          class="mx-auto flex w-[36rem] items-center gap-x-[24px] rounded-full bg-white py-[0.44rem] pl-[1.18rem] pr-[0.37rem]"
+        >
+          <img
+            src="./assets/icons/email.svg"
+            alt="email"
+            class="h-[1.1875rem] w-[1.32488rem]"
+          />
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Enter Your Email"
+            class="w-[19rem] placeholder:text-black placeholder:opacity-70 focus:outline-none"
+          />
+          <button
+            class="gradient ml-auto inline-block w-fit rounded-full px-[1.875rem] py-[1rem] text-sm font-medium text-white"
+          >
+            Start for Free
+          </button>
+        </div>
       </div>
+      <img
+        src="./assets/images/dashboard.webp"
+        alt="dashboard"
+        class="mx-auto mt-[6.25rem]"
+      />
     </header>
+
+    <!-- Clients Section -->
+
+    <section class="container mt-[9.37rem] grid grid-cols-5 gap-[6.17rem]">
+      <img
+        src="./assets/images/clients/image 3.jpg"
+        class="m-auto"
+        alt=""
+      /><img
+        src="./assets/images/clients/image 8.jpg"
+        class="m-auto"
+        alt=""
+      /><img
+        src="./assets/images/clients/image 4.jpg"
+        class="m-auto"
+        alt=""
+      /><img
+        src="./assets/images/clients/image 5.jpg"
+        class="m-auto"
+        alt=""
+      /><img src="./assets/images/clients/image 7.jpg" class="m-auto" alt="" />
+    </section>
+
+    <!-- Services SEction -->
+    <section class="container my-[9.37rem]">
+      <h1 class="mx-auto w-1/2 text-center text-5xl font-bold capitalize">
+        Our services made for you?
+      </h1>
+      <div class="mt-[3.13rem] grid grid-cols-3 gap-[1.88rem]">
+        <div
+          class="rounded-[1.25rem] px-[1.4rem] py-[3rem] shadow-[0_0_100px_rgba(0,0,0,0.07)]"
+        >
+          <img
+            src="./assets/icons/services/task-management.svg"
+            alt="task-management"
+            class="mx-auto"
+          />
+          <h4 class="mt-[2.19rem] text-center text-2xl font-bold">
+            Task Management
+          </h4>
+          <p class="mt-[1.13rem] text-center text-xs opacity-70">
+            The process of managing a task through its life cycle. It involves
+            planning, testing, tracking.
+          </p>
+          <a
+            href="#"
+            class="mt-[1.75rem] flex justify-center gap-[0.5rem] font-semibold text-blue-dark"
+            >Read More
+            <img src="./assets/icons/right-arrow.svg" alt="right-arrow"
+          /></a>
+        </div>
+        <div
+          class="rounded-[1.25rem] px-[1.4rem] py-[3rem] shadow-[0_0_100px_rgba(0,0,0,0.07)]"
+        >
+          <img
+            src="./assets/icons/services/design-system.svg"
+            alt="task-management"
+            class="mx-auto"
+          />
+          <h4 class="mt-[2.19rem] text-center text-2xl font-bold">
+            Design System
+          </h4>
+          <p class="mt-[1.13rem] text-center text-xs opacity-70">
+            The technology by which a process or procedure is performed with
+            minimal human assistance.
+          </p>
+          <a
+            href="#"
+            class="mt-[1.75rem] flex justify-center gap-[0.5rem] font-semibold text-blue-dark"
+            >Read More
+            <img src="./assets/icons/right-arrow.svg" alt="right-arrow"
+          /></a>
+        </div>
+        <div
+          class="rounded-[1.25rem] px-[1.4rem] py-[3rem] shadow-[0_0_100px_rgba(0,0,0,0.07)]"
+        >
+          <img
+            src="./assets/icons/services/best-practices.svg"
+            alt="task-management"
+            class="mx-auto"
+          />
+          <h4 class="mt-[2.19rem] text-center text-2xl font-bold">
+            Best Practices
+          </h4>
+          <p class="mt-[1.13rem] text-center text-xs opacity-70">
+            Creating plan to spend your money, This spending planer is called a
+            budgeting tool for business.
+          </p>
+          <a
+            href="#"
+            class="mt-[1.75rem] flex justify-center gap-[0.5rem] font-semibold text-blue-dark"
+            >Read More
+            <img src="./assets/icons/right-arrow.svg" alt="right-arrow"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform Section -->
+
+    <section class="bg-white-light py-[5rem]">
+      <div class="container grid grid-cols-2 items-center gap-[4.63rem]">
+        <aside>
+          <h1 class="text-5xl font-bold">
+            Powerful and easy to use SaaS platform
+          </h1>
+
+          <p class="py-[2.19rem] text-sm font-medium">
+            Use marketing automation to identify hot leads and email your sales
+            team telling them to follow up. Nurture and contact leads at the
+            opportune time to maximize.
+          </p>
+
+          <button
+            class="gradient rounded-full px-[2.5rem] py-[0.94rem] font-bold uppercase tracking-[-0.025rem] text-white"
+          >
+            Get Started
+          </button>
+        </aside>
+
+        <aside>
+         <img src="./assets/images/saas-platform.webp" alt="saas-platform">
+        </aside>
+      </div>
+    </section>
   </body>
 </html>

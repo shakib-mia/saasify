@@ -8,9 +8,21 @@ body {
 }
 
 .container {
-  @apply !w-[90%] xl:!w-[75rem] mx-auto;
+  @apply mx-auto !w-[90%] xl:!w-[75rem];
+}
+
+.container-sm {
+  @apply mx-auto !w-[90%] xl:!w-[62rem];
 }
 
 .gradient {
   background: linear-gradient(107deg, #2272ff 0%, #0d03c3 100%);
+}
+
+/* section {
+  @apply px-[7.5rem];
+} */
+
+::-webkit-scrollbar {
+  width: 0;
 }
