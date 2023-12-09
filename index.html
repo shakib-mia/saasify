@@ -44,7 +44,7 @@
 
     <!-- Header Section -->
     <header
-      class="bg-contain bg-no-repeat pt-[13.69rem] 2xl:bg-[size:100%_100%]"
+      class="bg-contain bg-no-repeat pt-[13.69rem] selection:bg-white selection:text-blue-700 2xl:bg-[size:100%_100%]"
       style="background-image: url(./assets/images/backgrounds/header-bg.jpg)"
     >
       <!-- Header Text -->
@@ -220,7 +220,9 @@
 
     <!-- process section -->
 
-    <section class="gradient py-[8.19rem]">
+    <section
+      class="gradient py-[8.19rem] selection:bg-white selection:text-blue-700"
+    >
       <div class="container">
         <div
           class="flex flex-col items-center justify-start lg:flex-row lg:justify-between"
@@ -306,6 +308,117 @@
               class="rounded-[1.25rem]"
             />
           </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plans Section -->
+
+    <section class="container py-[9.31rem]">
+      <h1 class="text-center text-4xl font-bold">
+        Get results first. Pick a plan later.
+      </h1>
+
+      <div class="my-[4.25rem]">
+        <div class="flex justify-center">
+          <div
+            class="relative flex justify-center gap-[0.87rem] rounded-full bg-white-light p-[0.37rem]"
+          >
+            <input
+              type="radio"
+              class="hidden"
+              name="plan"
+              id="monthly"
+              checked
+            />
+            <label
+              class="cursor-pointer px-[0.94rem] py-[0.37rem] text-xs transition-[bakcground-color]"
+              id="monthly-label"
+              for="monthly"
+              >Monthly</label
+            >
+
+            <input type="radio" class="hidden" name="plan" id="yearly" />
+            <label
+              class="cursor-pointer px-[0.94rem] py-[0.37rem] text-xs transition-[bakcground-color]"
+              id="yearly-label"
+              for="yearly"
+              >Yearly</label
+            >
+
+            <img
+              src="./assets/icons/off.svg"
+              alt="off"
+              class="absolute -top-[85%] left-[98%]"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-[1.5rem]">
+        <div
+          style="box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.1)"
+          class="group rounded-[0.9375rem] p-9 transition-all hover:bg-gradient-to-r hover:from-blue-light hover:to-blue-dark hover:text-white"
+        >
+          <h5 class="text-2xl font-bold">Popular</h5>
+          <h1 class="text-5xl font-bold text-blue group-hover:text-white">
+            $30
+            <span class="text-xs text-black group-hover:text-white"
+              >/month</span
+            >
+          </h1>
+          <h6 class="text-xs">For Medium businessess</h6>
+
+          <div
+            class="my-8 h-[0.0625rem] w-full bg-black opacity-20 group-hover:bg-white group-hover:opacity-70"
+          ></div>
+
+          <svg
+            viewBox="0 0 10 8"
+            class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.25 4.625L4.25 6.5L8.75 1.5"
+              class="fill-transparent stroke-white group-hover:stroke-blue"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div
+          style="box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.1)"
+          class="group rounded-[0.9375rem] p-9 transition-all hover:bg-gradient-to-r hover:from-blue-light hover:to-blue-dark hover:text-white"
+        >
+          <h5 class="text-2xl font-bold">Popular</h5>
+          <h1 class="text-5xl font-bold text-blue group-hover:text-white">
+            $30
+            <span class="text-xs text-black group-hover:text-white"
+              >/month</span
+            >
+          </h1>
+          <h6 class="text-xs">For Medium businessess</h6>
+
+          <div
+            class="my-8 h-[0.0625rem] w-full bg-black opacity-20 group-hover:bg-white group-hover:opacity-70"
+          ></div>
+        </div>
+        <div
+          style="box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.1)"
+          class="group rounded-[0.9375rem] p-9 transition-all hover:bg-gradient-to-r hover:from-blue-light hover:to-blue-dark hover:text-white"
+        >
+          <h5 class="text-2xl font-bold">Popular</h5>
+          <h1 class="text-5xl font-bold text-blue group-hover:text-white">
+            $30
+            <span class="text-xs text-black group-hover:text-white"
+              >/month</span
+            >
+          </h1>
+          <h6 class="text-xs">For Medium businessess</h6>
+
+          <div
+            class="my-8 h-[0.0625rem] w-full bg-black opacity-20 group-hover:bg-white group-hover:opacity-70"
+          ></div>
         </div>
       </div>
     </section>
