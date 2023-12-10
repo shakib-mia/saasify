@@ -50,3 +50,31 @@ body {
 #yearly:checked ~ #yearly-plans {
   display: grid;
 }
+
+h1 {
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+}
+
+h2 {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+}
+
+h3 {
+  @apply text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+}
+
+h4 {
+  @apply text-xl lg:text-2xl xl:text-3xl;
+}
+
+h5 {
+  @apply text-2xl md:text-3xl xl:text-4xl;
+}
+
+h6 {
+  @apply text-xl xl:text-2xl;
+}
+
+#nav-check:checked ~ #navbar {
+  @apply h-auto py-[2.69rem];
+}

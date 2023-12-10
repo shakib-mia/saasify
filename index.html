@@ -19,8 +19,19 @@
       <!-- Logo -->
       <p class="text-sm font-semibold">Saasify</p>
 
+      <label class="md:hidden" for="nav-check">
+        <img
+          src="./assets/icons/white-menu-icon-4.svg"
+          alt="hamburger"
+          class="h-5 w-5"
+        />
+      </label>
+      <input type="checkbox" class="hidden" id="nav-check" />
       <!-- Nav Links -->
-      <ul class="flex gap-[2.69rem]">
+      <ul
+        class="absolute left-[-21px] top-24 flex h-0 w-screen flex-col gap-[2.69rem] overflow-hidden bg-blue-light pl-5 transition-all duration-300 md:static md:h-auto md:w-auto md:flex-row md:bg-transparent"
+        id="navbar"
+      >
         <li class="text-xs">
           <a href="#">Product</a>
         </li>
@@ -40,7 +51,7 @@
 
       <!-- Sign up Button -->
       <button
-        class="rounded-full bg-white px-[1.88rem] py-[0.75rem] text-sm font-semibold text-black"
+        class="hidden rounded-full bg-white px-[1.88rem] py-[0.75rem] text-sm font-semibold text-black md:block"
       >
         Sign up
       </button>
@@ -48,19 +59,19 @@
 
     <!-- Header Section -->
     <header
-      class="bg-contain bg-no-repeat pt-[13.69rem] selection:bg-white selection:text-blue-700 2xl:bg-[size:100%_100%]"
+      class="bg-[cover] bg-no-repeat pt-[13.69rem] selection:bg-white selection:text-blue-700 xl:bg-contain 2xl:bg-[size:100%_100%]"
       style="background-image: url(./assets/images/backgrounds/header-bg.jpg)"
     >
       <!-- Header Text -->
-      <div class="mx-auto w-[62rem]">
+      <div class="mx-auto xl:w-[62rem]">
         <h1
-          class="text-center text-7xl font-extrabold capitalize tracking-[-0.135rem] text-white"
+          class="text-center font-extrabold capitalize tracking-[-0.135rem] text-white"
         >
           The fastest way for startups to do any analysis
         </h1>
         <!-- Header Paragraph -->
         <p
-          class="mx-[12.9rem] my-[2.5rem] text-center text-lg font-medium text-white opacity-80"
+          class="my-[2.5rem] text-center text-lg font-medium text-white opacity-80 xl:mx-[12.9rem]"
         >
           Equals is the only spreadsheet with built-in connections to any
           database, versioning, and collaboration.
@@ -69,22 +80,22 @@
         <!-- Newsletter -->
 
         <div
-          class="mx-auto flex w-[36rem] items-center rounded-full bg-white py-[0.4rem] pl-[1.81rem] pr-[0.37rem]"
+          class="mx-auto flex w-11/12 items-center rounded-full bg-white py-[0.4rem] pl-3 pr-2 xl:w-[36rem] xl:pl-[1.81rem] xl:pr-[0.37rem]"
         >
           <img
             src="./assets/icons/email.svg"
             alt="email"
-            class="mr-[1.49rem] h-[1.1875rem] w-[1.32488rem]"
+            class="mr-3 h-[1.1875rem] w-[1.32488rem] xl:mr-[1.49rem]"
           />
           <input
             type="email"
             name=""
             id=""
             placeholder="Enter Your Email"
-            class="w-[19rem] placeholder:text-black placeholder:opacity-70 focus:outline-none"
+            class="w-[60%] placeholder:text-black placeholder:opacity-70 focus:outline-none xl:w-[19rem]"
           />
           <button
-            class="gradient ml-auto inline-block w-fit rounded-full px-[1.875rem] py-[1rem] text-sm font-medium text-white"
+            class="gradient ml-auto inline-block w-fit rounded-full px-3 py-[1rem] text-xxs font-medium text-white xl:px-[1.875rem] xl:text-sm"
           >
             Start for Free
           </button>
@@ -99,7 +110,9 @@
 
     <!-- Clients Section -->
 
-    <section class="container mt-[9.37rem] grid grid-cols-5 gap-[6.17rem]">
+    <section
+      class="container mt-[9.37rem] grid grid-cols-5 gap-5 xl:gap-[6.17rem]"
+    >
       <img
         src="./assets/images/clients/image 3.jpg"
         class="m-auto"
@@ -121,21 +134,21 @@
 
     <!-- Services SEction -->
     <section class="container my-[9.37rem]">
-      <h3 class="mx-auto w-2/5 text-center text-5xl font-bold capitalize">
+      <h3 class="mx-auto w-1/2 text-center font-bold capitalize xl:w-2/5">
         Our services made for you?
       </h3>
-      <div class="mt-[3.13rem] grid grid-cols-3 gap-[1.88rem]">
+      <div
+        class="mt-8 grid grid-cols-1 justify-items-center gap-[1.88rem] md:grid-cols-2 xl:mt-[3.13rem] xl:grid-cols-3"
+      >
         <div
-          class="rounded-[1.25rem] px-[1.4rem] py-[3rem] shadow-[0_0_100px_rgba(0,0,0,0.07)]"
+          class="rounded-[1.25rem] px-4 py-8 shadow-[0_0_100px_rgba(0,0,0,0.07)] xl:px-[1.4rem] xl:py-[3rem]"
         >
           <img
             src="./assets/icons/services/task-management.svg"
             alt="task-management"
             class="mx-auto"
           />
-          <h6 class="mt-[2.19rem] text-center text-2xl font-bold">
-            Task Management
-          </h6>
+          <h6 class="mt-[2.19rem] text-center font-bold">Task Management</h6>
           <p class="mt-[1.13rem] text-center text-xs opacity-70">
             The process of managing a task through its life cycle. It involves
             planning, testing, tracking.
@@ -148,16 +161,14 @@
           /></a>
         </div>
         <div
-          class="rounded-[1.25rem] px-[1.4rem] py-[3rem] shadow-[0_0_100px_rgba(0,0,0,0.07)]"
+          class="rounded-[1.25rem] px-4 py-8 shadow-[0_0_100px_rgba(0,0,0,0.07)] xl:px-[1.4rem] xl:py-[3rem]"
         >
           <img
             src="./assets/icons/services/design-system.svg"
             alt="task-management"
             class="mx-auto"
           />
-          <h6 class="mt-[2.19rem] text-center text-2xl font-bold">
-            Design System
-          </h6>
+          <h6 class="mt-[2.19rem] text-center font-bold">Design System</h6>
           <p class="mt-[1.13rem] text-center text-xs opacity-70">
             The technology by which a process or procedure is performed with
             minimal human assistance.
@@ -170,16 +181,14 @@
           /></a>
         </div>
         <div
-          class="rounded-[1.25rem] px-[1.4rem] py-[3rem] shadow-[0_0_100px_rgba(0,0,0,0.07)]"
+          class="rounded-[1.25rem] px-4 py-8 shadow-[0_0_100px_rgba(0,0,0,0.07)] xl:px-[1.4rem] xl:py-[3rem]"
         >
           <img
             src="./assets/icons/services/best-practices.svg"
             alt="task-management"
             class="mx-auto"
           />
-          <h6 class="mt-[2.19rem] text-center text-2xl font-bold">
-            Best Practices
-          </h6>
+          <h6 class="mt-[2.19rem] text-center font-bold">Best Practices</h6>
           <p class="mt-[1.13rem] text-center text-xs opacity-70">
             Creating plan to spend your money, This spending planer is called a
             budgeting tool for business.
@@ -197,11 +206,17 @@
     <!-- Platform Section -->
 
     <section class="bg-white-light py-[5rem]">
-      <div class="container grid grid-cols-2 items-center gap-[4.63rem]">
+      <h3 class="container font-bold xl:hidden">
+        Powerful and easy to use SaaS platform
+      </h3>
+
+      <div
+        class="container grid grid-cols-1 items-center gap-[4.63rem] xl:grid-cols-2"
+      >
         <aside>
-          <h2 class="text-6xl font-bold">
+          <h3 class="hidden font-bold xl:block">
             Powerful and easy to use SaaS platform
-          </h2>
+          </h3>
 
           <p class="py-[2.19rem] text-sm font-medium opacity-80">
             Use marketing automation to identify hot leads and email your sales
@@ -210,13 +225,13 @@
           </p>
 
           <button
-            class="gradient rounded-full px-[2.5rem] py-[0.94rem] font-bold uppercase tracking-[-0.025rem] text-white"
+            class="gradient rounded-full px-5 py-2 font-bold uppercase tracking-[-0.025rem] text-white xl:px-[2.5rem] xl:py-[0.94rem]"
           >
             Get Started
           </button>
         </aside>
 
-        <aside>
+        <aside class="-order-1 xl:order-1">
           <img src="./assets/images/saas-platform.webp" alt="saas-platform" />
         </aside>
       </div>
@@ -225,20 +240,20 @@
     <!-- process section -->
 
     <section
-      class="gradient py-[8.19rem] selection:bg-white selection:text-blue-700"
+      class="gradient py-10 selection:bg-white selection:text-blue-700 lg:py-[8.19rem]"
     >
       <div class="container">
         <div
-          class="flex flex-col items-center justify-start lg:flex-row lg:justify-between"
+          class="flex flex-col justify-start gap-5 text-center lg:flex-row lg:items-center lg:justify-between lg:gap-0 lg:text-left"
         >
-          <h1 class="text-[3rem] font-bold text-white">
+          <h4 class="font-bold text-white xl:text-[3rem]">
             Work smarter <br />
             with easy access for user..
-          </h1>
+          </h4>
 
           <aside class="w-full lg:w-fit">
             <button
-              class="rounded-full bg-white px-[2.15rem] py-[1.19rem] text-lg font-bold text-blue"
+              class="rounded-full bg-white px-5 py-2 text-lg font-bold text-blue xl:px-[2.15rem] xl:py-[1.19rem]"
             >
               Get Started Now
             </button>
@@ -246,18 +261,20 @@
         </div>
 
         <div
-          class="mt-[5.5rem] flex flex-col-reverse gap-[6.75rem] lg:flex-row lg:items-center"
+          class="mt-8 flex flex-col-reverse gap-6 lg:mt-[5.5rem] lg:flex-row lg:items-center lg:gap-[6.75rem]"
         >
           <aside class="w-full lg:w-5/12">
-            <div class="flex gap-7">
-              <div class="w-1/5">
+            <div class="flex gap-0 xl:gap-7">
+              <div
+                class="flex w-1/6 items-center justify-center xl:block xl:w-1/5"
+              >
                 <h5
-                  class="flex h-24 w-24 items-center justify-center rounded-full bg-white text-3xl font-bold text-blue"
+                  class="flex aspect-square w-12 items-center justify-center rounded-full bg-white font-bold text-blue xl:h-24 xl:w-24"
                 >
                   1
                 </h5>
               </div>
-              <div class="w-4/5 text-white">
+              <div class="w-5/6 text-white">
                 <h3 class="text-[1.625rem] font-bold">Create Account</h3>
                 <p class="mt-[0.33rem] text-[1.1815rem] font-medium opacity-80">
                   After learning about your customer service needs, we will get
@@ -266,15 +283,17 @@
               </div>
             </div>
 
-            <div class="mt-10 flex gap-7">
-              <div class="w-1/5">
+            <div class="mt-10 flex gap-0 xl:gap-7">
+              <div
+                class="flex w-1/6 items-center justify-center xl:block xl:w-1/5"
+              >
                 <h5
-                  class="flex h-24 w-24 items-center justify-center rounded-full bg-white text-3xl font-bold text-blue"
+                  class="flex aspect-square w-12 items-center justify-center rounded-full bg-white font-bold text-blue xl:h-24 xl:w-24"
                 >
                   2
                 </h5>
               </div>
-              <div class="w-4/5 text-white">
+              <div class="w-5/6 text-white">
                 <h3 class="text-[1.625rem] font-bold">Install tracking code</h3>
                 <p class="mt-[0.33rem] text-[1.1815rem] font-medium opacity-80">
                   After learning about your customer service needs, we will get
@@ -283,15 +302,17 @@
               </div>
             </div>
 
-            <div class="mt-10 flex gap-7">
-              <div class="w-1/5">
+            <div class="mt-10 flex gap-0 xl:gap-7">
+              <div
+                class="flex w-1/6 items-center justify-center xl:block xl:w-1/5"
+              >
                 <h5
-                  class="flex h-24 w-24 items-center justify-center rounded-full bg-white text-3xl font-bold text-blue"
+                  class="flex aspect-square w-12 items-center justify-center rounded-full bg-white font-bold text-blue xl:h-24 xl:w-24"
                 >
                   3
                 </h5>
               </div>
-              <div class="w-4/5 text-white">
+              <div class="w-5/6 text-white">
                 <h3 class="text-[1.625rem] font-bold">Track analytics</h3>
                 <p class="mt-[0.33rem] text-[1.1815rem] font-medium opacity-80">
                   After learning about your customer service needs, we will get
@@ -318,11 +339,11 @@
 
     <!-- Plans Section -->
 
-    <section class="container py-[9.31rem]">
+    <section class="container py-10 xl:py-[9.31rem]">
       <!-- Plans Section Heading -->
-      <h4 class="text-center text-4xl font-bold">
+      <h3 class="text-center font-bold">
         Get results first. Pick a plan later.
-      </h4>
+      </h3>
       <input type="radio" class="hidden" name="plan" id="monthly" checked />
       <input type="radio" class="hidden" name="plan" id="yearly" />
       <div class="tab-container my-[4.25rem]">
@@ -350,14 +371,17 @@
             <img
               src="./assets/icons/off.svg"
               alt="off"
-              class="absolute -top-[85%] left-[98%]"
+              class="absolute -top-[87%] left-[86%] xl:-top-[85%] xl:left-[98%]"
             />
           </div>
         </div>
       </div>
 
       <!-- Monthly -->
-      <div class="grid grid-cols-3 gap-[1.5rem]" id="monthly-plans">
+      <div
+        class="grid grid-cols-1 gap-[1.5rem] md:grid-cols-2 xl:grid-cols-3"
+        id="monthly-plans"
+      >
         <!-- Plan 1 -->
         <div
           style="box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.1)"
@@ -654,7 +678,10 @@
       </div>
 
       <!-- Yearly -->
-      <div class="grid grid-cols-3 gap-[1.5rem]" id="yearly-plans">
+      <div
+        class="grid grid-cols-1 gap-[1.5rem] md:grid-cols-2 xl:grid-cols-3"
+        id="yearly-plans"
+      >
         <!-- Plan 1 -->
         <div
           style="box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.1)"
@@ -954,11 +981,11 @@
     <!-- Testimonial Section -->
 
     <section class="container pb-[9.37rem]">
-      <h4 class="text-center text-4xl font-bold">
-        What people are saying about us
-      </h4>
+      <h5 class="text-center font-bold">What people are saying about us</h5>
 
-      <div class="mt-[3.75rem] grid grid-cols-3 gap-[1.88rem]">
+      <div
+        class="mt-[3.75rem] grid grid-cols-1 gap-[1.88rem] md:grid-cols-2 xl:grid-cols-3"
+      >
         <div
           style="box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.07)"
           class="rounded-[1.25rem] px-[2.37rem] py-[3.25rem]"
@@ -1036,14 +1063,14 @@
     <footer class="bg-bg pt-16 text-white">
       <div class="container">
         <h2
-          class="mx-auto w-2/3 text-center text-6xl font-extrabold leading-[4.1875rem] text-white"
+          class="mx-auto w-11/12 text-center font-extrabold text-white xl:w-2/3 2xl:leading-[4.1875rem]"
         >
           We are here to help you grow your business
         </h2>
 
         <div class="mt-10 text-center">
           <button
-            class="rounded-full bg-white px-[2.15rem] py-[1.19rem] text-lg font-bold text-blue"
+            class="rounded-full bg-white px-5 py-2 text-lg font-bold text-blue xl:px-[2.15rem] xl:py-[1.19rem]"
           >
             Get Started Now
           </button>
@@ -1051,92 +1078,138 @@
       </div>
       <div class="mt-16 border border-x-0 border-y border-y-[#ffffff66] py-14">
         <div class="container">
-          <div class="flex gap-32">
-            <div class="w-4/12">
+          <div class="flex flex-col gap-10 xl:flex-row xl:gap-32">
+            <div class="w-full xl:w-4/12">
               <p class="text-lg font-bold">SAASIFY</p>
               <p class="mt-4 text-sm leading-[150%] opacity-80">
                 Data visualization, and expense management for your business.
               </p>
             </div>
-            <div class="w-8/12">
-              <div class="flex justify-end">
-                <div class="w-1/4">
+            <div class="xl:w-8/12">
+              <div
+                class="grid grid-cols-1 justify-end gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-0"
+              >
+                <div class="w-full">
                   <p class="text-lg font-semibold">Product</p>
-                  <ul class="mt-8 flex flex-col gap-6 text-xs opacity-80">
+                  <ul
+                    class="mt-2 flex flex-col gap-2 text-xs 2xl:mt-8 2xl:gap-6"
+                  >
                     <li>
-                      <a href="#">Digital Invoice</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Digital Invoice</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Insights</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Insights</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Reimbursements</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Reimbursements</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Virtual Assistant</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Virtual Assistant</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Artificial Intelligence</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Artificial Intelligence</a
+                      >
                     </li>
                   </ul>
                 </div>
-                <div class="w-1/4">
+                <div class="w-full">
                   <p class="text-lg font-semibold">Company</p>
-                  <ul class="mt-8 flex flex-col gap-6 text-xs opacity-80">
+                  <ul
+                    class="mt-2 flex flex-col gap-2 text-xs 2xl:mt-8 2xl:gap-6"
+                  >
                     <li>
-                      <a href="#">About Us</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >About Us</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Newsletters</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Newsletters</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Our Partners</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Our Partners</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Career</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Career</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Contact Us</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Contact Us</a
+                      >
                     </li>
                   </ul>
                 </div>
-                <div class="w-1/4">
+                <div class="w-full">
                   <p class="text-lg font-semibold">Resources</p>
-                  <ul class="mt-8 flex flex-col gap-6 text-xs opacity-80">
+                  <ul
+                    class="mt-2 flex flex-col gap-2 text-xs 2xl:mt-8 2xl:gap-6"
+                  >
                     <li>
-                      <a href="#">Blog</a>
+                      <a class="opacity-80 hover:opacity-100" href="#">Blog</a>
                     </li>
                     <li>
-                      <a href="#">Pricing</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Pricing</a
+                      >
                     </li>
                     <li>
-                      <a href="#">FAQ</a>
+                      <a class="opacity-80 hover:opacity-100" href="#">FAQ</a>
                     </li>
                     <li>
-                      <a href="#">Events</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Events</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Ebook & Guide</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Ebook & Guide</a
+                      >
                     </li>
                   </ul>
                 </div>
-                <div class="w-1/4">
+                <div class="w-full">
                   <p class="text-lg font-semibold">Follow Us</p>
-                  <ul class="mt-8 flex flex-col gap-6 text-xs opacity-80">
+                  <ul
+                    class="mt-2 flex flex-col gap-2 text-xs 2xl:mt-8 2xl:gap-6"
+                  >
                     <li>
-                      <a href="#">LinkedIn</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >LinkedIn</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Twitter</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Twitter</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Instagram</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Instagram</a
+                      >
                     </li>
                     <li>
-                      <a href="#">Facebook</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >Facebook</a
+                      >
                     </li>
                     <li>
-                      <a href="#">YouTube</a>
+                      <a class="opacity-80 hover:opacity-100" href="#"
+                        >YouTube</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -1155,7 +1228,7 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
     <script>
       const lenis = new Lenis({
-        duration: 1,
+        duration: 0.7,
       });
 
       lenis.on("scroll", (e) => {
