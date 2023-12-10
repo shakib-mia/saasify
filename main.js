@@ -18,3 +18,5 @@ document.getElementById("video-check").addEventListener("change", (e) => {
     document.getElementById("video-container").style.display = "flex";
   } else document.getElementById("video-container").style.display = "none";
 });
+
+alert(window.innerWidth);
