@@ -27,10 +27,26 @@ body {
   width: 0;
 }
 
-#monthly:checked + #monthly-label,
-#yearly:checked + #yearly-label {
+#monthly:checked ~ .tab-container .flex #monthly-label,
+#yearly:checked ~ .tab-container .flex #yearly-label {
   background: linear-gradient(107deg, #2272ff 0%, #0d03c3 100%);
   color: white;
   border-radius: 9999px; /* Apply a large border-radius for a rounded effect */
   padding: 0.37rem 0.94rem; /* Adjust padding as needed */
+}
+
+#monthly-plans {
+  display: none;
+}
+
+#monthly:checked ~ #monthly-plans {
+  display: grid;
+}
+
+#yearly-plans {
+  display: none;
+}
+
+#yearly:checked ~ #yearly-plans {
+  display: grid;
 }
