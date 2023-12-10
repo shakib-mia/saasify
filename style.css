@@ -78,3 +78,10 @@ h6 {
 #nav-check:checked ~ #navbar {
   @apply h-auto py-[2.69rem];
 }
+
+#video-check:checked ~ #smart-section #video-container {
+  display: flex;
+}
+#video-container {
+  @apply hidden;
+}

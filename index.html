@@ -262,6 +262,7 @@
 
         <div
           class="mt-8 flex flex-col-reverse gap-6 lg:mt-[5.5rem] lg:flex-row lg:items-center lg:gap-[6.75rem]"
+          id="smart-section"
         >
           <aside class="w-full lg:w-5/12">
             <div class="flex gap-0 xl:gap-7">
@@ -322,17 +323,32 @@
             </div>
           </aside>
           <aside class="relative h-full w-full lg:w-7/12">
-            <div
+            <label
               class="absolute bottom-0 left-0 right-0 top-0 m-auto h-fit w-fit cursor-pointer rounded-full bg-white p-8"
             >
               <img src="./assets/icons/play.svg" alt="play" class="h-7 w-7" />
-            </div>
+              <input type="checkbox" name="" id="video-check" class="hidden" />
+            </label>
             <img
               src="./assets/images/access.jpg"
               alt="access"
               class="rounded-[1.25rem]"
             />
           </aside>
+
+          <div
+            class="fixed left-0 top-0 z-[999] flex h-screen w-screen items-center justify-center backdrop-blur-lg"
+            id="video-container"
+          >
+            <div class="relative w-11/12 xl:w-1/2">
+              <label
+                for="video-check"
+                class="absolute -right-16 -top-20 text-5xl text-white"
+                >&times;</label
+              >
+              <video src="./assets/videos/video.mp4" controls autoplay></video>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1226,21 +1242,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
-    <script>
-      const lenis = new Lenis({
-        duration: 0.7,
-      });
-
-      lenis.on("scroll", (e) => {
-        console.log(e);
-      });
-
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-
-      requestAnimationFrame(raf);
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>
