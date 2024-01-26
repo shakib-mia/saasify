@@ -1,3 +1,6 @@
+// import { Lenis } from "https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js";
+AOS.init();
+
 const lenis = new Lenis({
   duration: 1,
 });
@@ -19,4 +22,6 @@ document.getElementById("video-check").addEventListener("change", (e) => {
   } else document.getElementById("video-container").style.display = "none";
 });
 
-alert(window.innerWidth);
+const date = new Date();
+
+document.getElementById("year").innerText = date.getFullYear();
