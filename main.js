@@ -28,3 +28,12 @@ document.getElementById("video-check").addEventListener("change", (e) => {
 const date = new Date();
 
 document.getElementById("year").innerText = date.getFullYear();
+
+document.getElementById("video-close").addEventListener("click", () => {
+  document.getElementById("video").src = "";
+});
+
+document.getElementById("play").addEventListener("click", () => {
+  document.getElementById("video").src =
+    "https://www.youtube.com/embed/Rwe5Aw3KPHY?si=-8i_Uer4-b3CBc3o";
+});
