@@ -20,10 +20,6 @@ body {
   background: linear-gradient(107deg, #2272ff 0%, #0d03c3 100%);
 }
 
-/* section {
-  @apply px-[7.5rem];
-} */
-
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -80,7 +76,7 @@ h6 {
   transition: all 0.5s ease;
   @apply fixed left-0 top-0 h-0 pt-0 md:static md:pt-0 xl:h-auto;
 }
-/* py-[2.69rem] pt-20 */
+
 #nav-check:checked ~ #navbar {
   @apply h-[400px] pt-20 xl:h-auto xl:pt-0;
 }

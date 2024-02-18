@@ -1,4 +1,3 @@
-// import { Lenis } from "https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js";
 document.addEventListener("DOMContentLoaded", function () {
   AOS.init();
   // Lenis initialization and other code here
@@ -8,9 +7,7 @@ const lenis = new Lenis({
   duration: 1,
 });
 
-lenis.on("scroll", (e) => {
-  //   console.log(e);
-});
+lenis.on("scroll", (e) => {});
 
 function raf(time) {
   lenis.raf(time);
