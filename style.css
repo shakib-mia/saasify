@@ -18,6 +18,15 @@ body {
 
 .gradient {
   background: linear-gradient(107deg, #2272ff 0%, #0d03c3 100%);
+  @apply duration-700;
+}
+
+button.gradient:hover {
+  background: linear-gradient(-107deg, #2272ff 0%, #0d03c3 100%);
+}
+
+.btn-white {
+  @apply rounded-full border-2 border-white bg-white px-[1.88rem] py-[0.75rem] text-sm font-semibold text-blue duration-300 hover:bg-transparent hover:text-white md:block;
 }
 
 ::-webkit-scrollbar {
