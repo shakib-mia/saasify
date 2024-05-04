@@ -4,6 +4,8 @@ Saasify is a powerful and user-friendly SaaS platform designed to streamline ana
 
 The platform simplifies marketing automation, lead nurturing, and provides easy access to essential tools for users to work smarter. With flexible pricing plans, Saasify caters to different business sizes, offering features like social profile management, team collaboration, and competitor analysis. Testimonials from users underscore the platform's value, emphasizing its role in business growth and management optimization.
 
+[Click here](https://saasify-shakib.netlify.app/) to get the live preview
+
 ## Packages
 
 1. **AOS (Animate on Scroll)**: For Scrolling Animation
