@@ -7,22 +7,32 @@ html {
   @apply overflow-x-hidden;
 }
 
+section {
+  @apply py-16 xl:py-32;
+}
+
+footer {
+  @apply pt-16;
+}
+
 body {
   font-family: "Inter", sans-serif;
   @apply overflow-x-hidden;
 }
 
 .container {
-  @apply mx-auto !max-w-[90%] xl:!max-w-[1200px];
+  @apply mx-auto px-4 xl:!max-w-[1200px];
 }
 
 .gradient {
   background: linear-gradient(107deg, #2272ff 0%, #0d03c3 100%);
-  @apply duration-700;
+  background-size: 200% 200%;
+  background-position: left center;
+  @apply transition-[background-position] duration-300 ease-linear;
 }
 
-button.gradient:hover {
-  background: linear-gradient(-107deg, #2272ff 0%, #0d03c3 100%);
+a.gradient:hover {
+  background-position: right center;
 }
 
 .btn-white {
@@ -87,11 +97,11 @@ p {
 
 #navbar {
   transition: all 0.5s ease;
-  @apply fixed left-0 top-0 h-0 pt-0 md:static md:pt-0 xl:h-auto;
+  @apply fixed left-0 top-0 h-0 max-h-[22.25rem] pt-0 shadow-lg md:h-auto md:pt-0 md:shadow-none;
 }
 
 #nav-check:checked ~ #navbar {
-  @apply h-[400px] pt-20 xl:h-auto xl:pt-0;
+  @apply h-full pt-[4.5rem] md:h-auto md:pt-0;
 }
 
 #video-check:checked ~ #smart-section #video-container {
@@ -100,3 +110,7 @@ p {
 #video-container {
   @apply hidden;
 }
+
+/* .swiper-wrapper {
+  @apply gap-7;
+} */
