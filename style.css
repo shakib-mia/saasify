@@ -36,7 +36,7 @@ a.gradient:hover {
 }
 
 .btn-white {
-  @apply rounded-full border-2 border-white bg-white px-[1.88rem] py-[0.75rem] text-sm font-semibold text-blue duration-300 hover:bg-transparent hover:text-white md:block;
+  @apply rounded-full border-2 border-white bg-white px-[1.88rem] py-[0.75rem] text-sm font-semibold text-blue duration-300 hover:bg-transparent hover:text-white;
 }
 
 ::-webkit-scrollbar {
@@ -96,12 +96,11 @@ p {
 }
 
 #navbar {
-  transition: all 0.5s ease;
-  @apply fixed left-0 top-0 h-0 max-h-[22.25rem] pt-0 shadow-lg md:h-auto md:pt-0 md:shadow-none;
+  @apply h-0 max-h-[18rem] overflow-hidden py-0 transition-[height] duration-700 ease-in lg:h-full lg:justify-center;
 }
 
 #nav-check:checked ~ #navbar {
-  @apply h-full pt-[4.5rem] md:h-auto md:pt-0;
+  @apply h-screen lg:h-full;
 }
 
 #video-check:checked ~ #smart-section #video-container {

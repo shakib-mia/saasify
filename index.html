@@ -9,73 +9,77 @@
     />
     <title>Saasify</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+    <script
+      src="https://kit.fontawesome.com/b50fc748ca.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- Navbar Section -->
     <nav
-      class="container fixed left-0 right-0 mx-auto flex items-center justify-between py-6 text-white xl:py-[2.44rem]"
-      id="navbar"
+      class="fixed left-0 top-0 z-[9999999999] w-screen text-white"
+      id="navbar-container"
     >
-      <!-- Logo -->
-      <a href="#" class="z-[9999] text-sm font-semibold">Saasify</a>
+      <div class="relative">
+        <div class="container flex items-center justify-between py-4">
+          <a href="#" class="flex items-center gap-2">
+            <h6 class="text-primary font-extrabold">Saasify</h6>
+          </a>
 
-      <label class="z-[9999] md:hidden" for="nav-check">
-        <img
-          src="./assets/icons/white-menu-icon-4.svg"
-          alt="hamburger"
-          class="h-8 w-8"
-        />
-      </label>
-      <input type="checkbox" class="hidden" id="nav-check" />
-      <!-- Nav Links -->
-      <div
-        class="absolute left-[-21px] top-24 z-50 w-screen overflow-hidden bg-blue-light md:static md:h-auto md:w-auto md:flex-row md:bg-transparent"
-      >
-        <ul
-          class="flex flex-col divide-y divide-white md:flex-row md:divide-y-0 xl:gap-0"
-        >
-          <li class="text-xs">
-            <a
-              class="container inline-block w-full py-4 underline-offset-4 hover:underline xl:py-0"
-              href="#about-us"
-              >About Us</a
+          <label for="nav-check" class="lg:hidden">
+            <i class="fa fa-bars text-2xl"></i>
+          </label>
+          <input type="checkbox" class="hidden" id="nav-check" />
+          <ul
+            class="font-poppins absolute left-0 top-16 flex w-full flex-col divide-y bg-white py-3 font-medium lg:static lg:w-fit lg:flex-row lg:gap-12 lg:bg-transparent lg:px-0 lg:py-0 xl:divide-y-0"
+            id="navbar"
+          >
+            <li
+              class="group !border-b text-blue-light transition hover:bg-blue-light hover:text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
             >
-          </li>
-          <li class="text-xs">
-            <a
-              class="container inline-block w-full py-4 underline-offset-4 hover:underline xl:py-0"
-              href="#"
-              >Newsletters</a
+              <a class="container mx-auto block py-4 xl:py-2" href="#">Home</a>
+            </li>
+            <li
+              class="group !border-b text-blue-light transition hover:bg-blue-light hover:text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
             >
-          </li>
-          <li class="text-xs">
-            <a
-              class="container inline-block w-full py-4 underline-offset-4 hover:underline xl:py-0"
-              href="#partners"
-              >Our Partners</a
+              <a class="container mx-auto block py-4 xl:py-2" href="#about"
+                >About</a
+              >
+            </li>
+            <li
+              class="group !border-b text-blue-light transition hover:bg-blue-light hover:text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
             >
-          </li>
-          <li class="text-xs">
-            <a
-              class="container inline-block w-full py-4 underline-offset-4 hover:underline xl:py-0"
-              href="#"
-              >Career</a
+              <a class="container mx-auto block py-4 xl:py-2" href="#services"
+                >Services</a
+              >
+            </li>
+            <li
+              class="group !border-b text-blue-light transition hover:bg-blue-light hover:text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
             >
-          </li>
-          <li class="text-xs">
-            <a
-              class="container inline-block w-full py-4 underline-offset-4 hover:underline xl:py-0"
-              href="#"
-              >Contact Us</a
+              <a class="container mx-auto block py-4 xl:py-2" href="#why-us"
+                >Why Us</a
+              >
+            </li>
+            <li
+              class="group !border-b text-blue-light transition hover:bg-blue-light hover:text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
             >
-          </li>
-        </ul>
+              <a
+                class="container mx-auto block py-4 xl:py-2"
+                href="#testimonials"
+                >Testimonials</a
+              >
+            </li>
+          </ul>
+
+          <a
+            href="#"
+            id="signup-button"
+            class="btn-white hidden rounded-full px-[1.88rem] py-[0.75rem] text-sm font-semibold text-white duration-300 xl:block"
+            >Sign up</a
+          >
+        </div>
       </div>
-
-      <!-- Sign up Button -->
-      <a href="#" class="btn-white hidden">Sign up</a>
     </nav>
 
     <!-- Header Section -->
@@ -1505,22 +1509,30 @@
                     class="mt-2 flex flex-col gap-2 text-xs 2xl:mt-8 2xl:gap-6"
                   >
                     <li>
-                      <a class="opacity-80 hover:opacity-100" href="#"
+                      <a
+                        class="opacity-80 hover:opacity-100"
+                        href="https://www.linkedin.com/company/radditollc/"
                         >LinkedIn</a
                       >
                     </li>
                     <li>
-                      <a class="opacity-80 hover:opacity-100" href="#"
+                      <a
+                        class="opacity-80 hover:opacity-100"
+                        href="https://twitter.com/RadditoLLC"
                         >Twitter</a
                       >
                     </li>
                     <li>
-                      <a class="opacity-80 hover:opacity-100" href="#"
+                      <a
+                        class="opacity-80 hover:opacity-100"
+                        href="https://www.instagram.com/radditollc"
                         >Instagram</a
                       >
                     </li>
                     <li>
-                      <a class="opacity-80 hover:opacity-100" href="#"
+                      <a
+                        class="opacity-80 hover:opacity-100"
+                        href="https://www.facebook.com/RadditoLLC"
                         >Facebook</a
                       >
                     </li>

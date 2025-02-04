@@ -79,7 +79,7 @@ function createScrollDirectionTracker() {
   let lastScrollY = 0;
 
   function handleScroll() {
-    const currentScrollY = Lenis.scroll || window.pageYOffset; // Using Lenis scroll
+    const currentScrollY = window.pageYOffset;
 
     if (currentScrollY > lastScrollY) {
       scrollDirection = "down";
@@ -88,30 +88,34 @@ function createScrollDirectionTracker() {
     }
 
     lastScrollY = currentScrollY;
-    // console.log(scrollDirection);
-    // Hide navbar on scroll down
-    if (scrollDirection === "down") {
-      navbar.style.top = "-10rem";
-      navbar.style.transition = "all 0.5s ease";
-    } else {
-      if (currentScrollY > 0) {
-        navbar.style.top = "0";
+    if (scrollDirection === "up") {
+      if (window.scrollY > document.querySelector("header").clientHeight) {
+        document.getElementById("navbar-container").style.background = "#fff";
+        document.getElementById("navbar-container").style.boxShadow =
+          "0 0 10px #ccc";
+        document.getElementById("navbar-container").style.color = "black";
+        document.querySelector("#signup-button").classList.add("gradient");
+        document.querySelector("#signup-button").classList.remove("btn-white");
       } else {
-        navbar.style.top = `${0}px`;
-        navbar.style.transition = "all 0.5s ease";
-      }
-    }
+        document.getElementById("navbar-container").style.background = "#fff0";
+        document.getElementById("navbar-container").style.boxShadow = "none";
 
-    // Box shadow and fixed position on scroll
-    if (currentScrollY > 0) {
-      navContent.style.boxShadow = "0 0 20px 0 #2B245D21";
-      navContent.style.position = "fixed";
+        document.getElementById("navbar-container").style.color = "white";
+        document.querySelector("#signup-button").classList.remove("gradient");
+        document.querySelector("#signup-button").classList.add("btn-white");
+      }
+      document.getElementById("navbar-container").style.top = "0";
+      document.getElementById("navbar-container").style.top = "0";
+      document.getElementById("navbar-container").style.transition =
+        "all 0.5s ease";
     } else {
-      navContent.style.boxShadow = "none";
+      document.getElementById("navbar-container").style.top = "-10rem";
+      document.getElementById("navbar-container").style.transition =
+        "all 0.5s ease";
     }
   }
+  // console.log(scrollDirection);
 
-  // Listen to scroll events
   window.addEventListener("scroll", handleScroll);
 
   return {
