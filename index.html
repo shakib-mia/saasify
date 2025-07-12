@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="The fastest way for startups to do any analysis"
+      content="Analyze anything in seconds — built for startups"
     />
     <title>Saasify</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -18,13 +18,13 @@
   <body>
     <!-- Navbar Section -->
     <nav
-      class="fixed left-0 top-0 z-[9999999999] w-screen text-white"
+      class="fixed left-0 top-0 z-[9999999999] w-screen"
       id="navbar-container"
     >
       <div class="relative">
         <div class="container flex items-center justify-between py-4">
           <a href="#" class="flex items-center gap-2">
-            <h6 class="text-primary font-extrabold">Saasify</h6>
+            <h6 class="font-extrabold">Saasify</h6>
           </a>
 
           <label for="nav-check" class="lg:hidden">
@@ -32,37 +32,37 @@
           </label>
           <input type="checkbox" class="hidden" id="nav-check" />
           <ul
-            class="font-poppins absolute left-0 top-16 flex w-full flex-col divide-y bg-white py-3 font-medium lg:static lg:w-fit lg:flex-row lg:gap-12 lg:bg-transparent lg:px-0 lg:py-0 xl:divide-y-0"
+            class="font-poppins absolute left-0 top-16 flex w-full flex-col divide-y bg-white py-3 font-medium lg:static lg:w-fit lg:flex-row lg:gap-6 lg:bg-transparent lg:px-0 lg:py-0 xl:divide-y-0"
             id="navbar"
           >
             <li
-              class="group !border-b text-blue-light transition hover:bg-blue-light hover:text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
+              class="group !border-b text-blue-light transition hover:bg-blue-light hover:!text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
             >
               <a class="container mx-auto block py-4 xl:py-2" href="#">Home</a>
             </li>
             <li
-              class="group !border-b text-blue-light transition hover:bg-blue-light hover:text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
+              class="group !border-b text-blue-light transition hover:bg-blue-light hover:!text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
             >
               <a class="container mx-auto block py-4 xl:py-2" href="#about"
                 >About</a
               >
             </li>
             <li
-              class="group !border-b text-blue-light transition hover:bg-blue-light hover:text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
+              class="group !border-b text-blue-light transition hover:bg-blue-light hover:!text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
             >
               <a class="container mx-auto block py-4 xl:py-2" href="#services"
                 >Services</a
               >
             </li>
             <li
-              class="group !border-b text-blue-light transition hover:bg-blue-light hover:text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
+              class="group !border-b text-blue-light transition hover:bg-blue-light hover:!text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
             >
               <a class="container mx-auto block py-4 xl:py-2" href="#why-us"
                 >Why Us</a
               >
             </li>
             <li
-              class="group !border-b text-blue-light transition hover:bg-blue-light hover:text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
+              class="group !border-b text-blue-light transition hover:bg-blue-light hover:!text-white xl:border-transparent xl:text-white xl:hover:border-white xl:hover:bg-transparent xl:hover:text-white"
             >
               <a
                 class="container mx-auto block py-4 xl:py-2"
@@ -88,26 +88,26 @@
       style="background-image: url(./assets/images/backgrounds/header-bg.jpg)"
     >
       <!-- Header Text -->
-      <div class="mx-auto w-[95%] xl:w-[62rem]">
+      <div class="mx-auto w-[95%] xl:w-[65rem]">
         <h1
           class="text-center font-extrabold capitalize tracking-[-0.135rem] text-white"
           data-aos="fade-right"
         >
-          The fastest way for startups to do any analysis
+          Analyze anything in seconds. built for startups
         </h1>
         <!-- Header Paragraph -->
         <p
-          class="mb-8 mt-6 text-center font-medium text-white opacity-80 md:mb-10 xl:mx-[12.9rem] xl:mt-10"
+          class="mb-8 mt-6 text-center font-medium text-white opacity-80 md:mb-10 xl:mx-[12.9rem] xl:mt-2"
           data-aos="fade-right"
           data-aos-delay="100"
         >
-          Equals is the only spreadsheet with built-in connections to any
-          database, versioning, and collaboration.
+          Effortlessly explore data, uncover insights, and drive growth with an
+          intuitive platform built for fast-moving startups.
         </p>
 
         <!-- Newsletter -->
 
-        <div
+        <form
           class="mx-auto flex items-center rounded-full bg-white py-[0.4rem] pl-3 pr-2 xl:w-[36rem] xl:pl-[1.81rem] xl:pr-[0.37rem]"
           data-aos="fade-right"
           data-aos-delay="200"
@@ -125,11 +125,12 @@
             class="w-[60%] placeholder:text-black placeholder:opacity-70 focus:outline-none xl:w-[19rem]"
           />
           <button
+            type="submit"
             class="gradient ml-auto inline-block w-fit rounded-full px-3 py-2 text-[10px] font-medium text-white xl:px-[1.875rem] xl:text-sm"
           >
             Start for Free
           </button>
-        </div>
+        </form>
       </div>
 
       <img
@@ -181,12 +182,12 @@
     </section>
 
     <!-- Services SEction -->
-    <section class="container pt-0">
+    <section class="container pt-0" id="why-us">
       <h3
-        class="mx-auto w-1/2 text-center font-bold capitalize xl:w-2/5"
+        class="mx-auto w-7/12 text-center font-bold capitalize lg:w-1/2 xl:w-2/5"
         data-aos="zoom-in"
       >
-        Our services made for you?
+        Tailored Solutions Just for You
       </h3>
       <div
         class="mt-8 grid grid-cols-1 justify-items-center gap-[1.88rem] md:grid-cols-2 xl:mt-[3.13rem] xl:grid-cols-3"
@@ -201,10 +202,12 @@
             alt="task-management"
             class="mx-auto"
           />
-          <h6 class="mt-[2.19rem] text-center font-bold">Task Management</h6>
+          <h6 class="mt-[2.19rem] text-center font-bold">
+            Smart Task Management
+          </h6>
           <p class="mt-[1.13rem] text-center text-xs opacity-70">
-            The process of managing a task through its life cycle. It involves
-            planning, testing, tracking, and so on.
+            The process of managing tasks throughout their entire life cycle,
+            including planning, tracking, testing, and completion.
           </p>
           <a
             href="#"
@@ -223,10 +226,12 @@
             alt="task-management"
             class="mx-auto"
           />
-          <h6 class="mt-[2.19rem] text-center font-bold">Design System</h6>
+          <h6 class="mt-[2.19rem] text-center font-bold">
+            Unified Design Systems
+          </h6>
           <p class="mt-[1.13rem] text-center text-xs opacity-70">
-            The technology by which a process or procedure is performed with
-            minimal human assistance.
+            A structured approach to building products and experiences with
+            consistency, efficiency, and minimal manual effort.
           </p>
           <a
             href="#"
@@ -245,10 +250,12 @@
             alt="task-management"
             class="mx-auto"
           />
-          <h6 class="mt-[2.19rem] text-center font-bold">Best Practices</h6>
+          <h6 class="mt-[2.19rem] text-center font-bold">
+            Business Best Practices
+          </h6>
           <p class="mt-[1.13rem] text-center text-xs opacity-70">
-            Creating plan to spend your money, This spending planer is called a
-            budgeting tool for business.
+            Developing clear plans to allocate resources wisely. This strategy
+            acts as a budgeting guide for your business.
           </p>
           <a
             href="#"
@@ -271,24 +278,24 @@
       <!-- for large device -->
       <div
         class="container grid grid-cols-1 items-center gap-8 xl:grid-cols-2 xl:gap-[4.63rem]"
-        id="about-us"
+        id="about"
       >
         <aside>
           <h3 class="font-bold" data-aos="fade-right">
-            Powerful and easy to use SaaS platform
+            Efficient and Simple SaaS Platform
           </h3>
 
           <p
-            class="py-4 text-sm font-medium opacity-80 xl:py-[2.19rem]"
+            class="py-4 text-sm font-medium opacity-80 xl:pt-0"
             data-aos="fade-right"
             data-aos-delay="100"
           >
-            Use marketing automation to identify hot leads and email your sales
-            team telling them to follow up. Nurture and contact leads at the
-            opportune time to maximize.
+            Our SaaS platform delivers powerful, easy-to-use tools designed to
+            streamline your workflow, boost productivity, and help your business
+            grow effortlessly.
           </p>
 
-          <div data-aos="fade-right" data-aos-delay="150">
+          <div data-aos="fade-right" data-aos-delay="150" class="mt-4">
             <a
               href="#"
               class="gradient rounded-full px-5 py-2 font-bold uppercase tracking-[-0.025rem] text-white xl:px-[2.5rem] xl:py-[0.94rem]"
@@ -311,9 +318,11 @@
         <div
           class="flex flex-col justify-start gap-5 text-center lg:flex-row lg:items-center lg:justify-between lg:gap-0 lg:text-left"
         >
-          <h4 class="font-bold text-white xl:text-[3rem]" data-aos="fade-right">
-            Work smarter <br />
-            with easy access for user.
+          <h4
+            class="font-bold text-white lg:w-2/3 xl:text-[3rem]"
+            data-aos="fade-right"
+          >
+            Work smarter with seamless, easy access for every user.
           </h4>
 
           <aside class="w-full lg:w-fit" data-aos="fade-left">
@@ -339,12 +348,12 @@
                 </h5>
               </div>
               <div class="w-5/6 text-white">
-                <h3 class="text-[1.625rem] font-bold">Create Account</h3>
+                <h3 class="text-[1.625rem] font-bold">Get Started</h3>
                 <p
                   class="mt-[0.33rem] text-xs font-medium opacity-80 xl:text-base"
                 >
-                  After learning about your customer service needs, we will get
-                  you up
+                  Create your account effortlessly and begin your journey with
+                  us.
                 </p>
               </div>
             </div>
@@ -362,12 +371,12 @@
                 </h5>
               </div>
               <div class="w-5/6 text-white">
-                <h3 class="text-[1.625rem] font-bold">Install tracking code</h3>
+                <h3 class="text-[1.625rem] font-bold">Set Up Tracking</h3>
                 <p
                   class="mt-[0.33rem] text-xs font-medium opacity-80 xl:text-base"
                 >
-                  After learning about your customer service needs, we will get
-                  you up
+                  Add our tracking code to your website to capture essential
+                  user data.
                 </p>
               </div>
             </div>
@@ -385,12 +394,12 @@
                 </h5>
               </div>
               <div class="w-5/6 text-white">
-                <h3 class="text-[1.625rem] font-bold">Track analytics</h3>
+                <h3 class="text-[1.625rem] font-bold">Analyze Results</h3>
                 <p
                   class="mt-[0.33rem] text-xs font-medium opacity-80 xl:text-base"
                 >
-                  After learning about your customer service needs, we will get
-                  you up
+                  Monitor and interpret your analytics to optimize your business
+                  strategies.
                 </p>
               </div>
             </div>
@@ -421,12 +430,12 @@
             <div class="relative w-11/12 xl:w-1/2">
               <label
                 for="video-check"
-                class="absolute -right-4 -top-20 text-5xl text-white xl:-right-16"
+                class="absolute -right-4 -top-20 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white text-2xl text-blue xl:-right-16"
                 id="video-close"
                 >&times;</label
               >
               <iframe
-                src="https://www.youtube.com/embed/Os1oDqefGOA?si=ZNoNK5qI3_0xqDn8"
+                src="https://www.youtube.com/embed/D0UnqGm_miA?si=ZoSnxS27iN_HQwhw"
                 title="YouTube video player"
                 class="aspect-video w-full"
                 id="video"
@@ -442,48 +451,15 @@
 
     <!-- Plans Section -->
 
-    <section class="container">
+    <section class="container" id="services">
       <!-- Plans Section Heading -->
-      <h3 class="text-center font-bold">
-        Get results first. Pick a plan later.
+      <h3 class="mx-auto text-center font-bold lg:w-7/12">
+        Focus on results now, select a plan afterwards.
       </h3>
-      <input type="radio" class="hidden" name="plan" id="monthly" checked />
-      <input type="radio" class="hidden" name="plan" id="yearly" />
-      <div class="tab-container my-[4.25rem]">
-        <!-- Plans Tabs -->
-        <div class="flex justify-center">
-          <div
-            class="relative flex justify-center gap-[0.87rem] rounded-full bg-white-light p-[0.37rem]"
-          >
-            <!-- Plan TExt -->
-            <label
-              class="cursor-pointer px-[0.94rem] py-[0.37rem] text-xs transition-[bakcground-color]"
-              id="monthly-label"
-              for="monthly"
-              >Monthly</label
-            >
-
-            <!-- Plan TExt -->
-            <label
-              class="cursor-pointer px-[0.94rem] py-[0.37rem] text-xs transition-[bakcground-color]"
-              id="yearly-label"
-              for="yearly"
-              >Yearly</label
-            >
-
-            <img
-              src="./assets/icons/off.svg"
-              alt="off"
-              class="absolute -right-[44%] -top-[100%] xl:-top-[85%] xl:left-[98%]"
-            />
-          </div>
-        </div>
-      </div>
 
       <!-- Monthly -->
       <div
-        class="grid grid-cols-1 items-center gap-[1.5rem] md:grid-cols-2 xl:grid-cols-3"
-        id="monthly-plans"
+        class="mt-8 grid grid-cols-1 items-center gap-[1.5rem] md:grid-cols-2 xl:grid-cols-3"
       >
         <!-- Plan 1 -->
         <div data-aos="fade-right" data-aos-delay="500" class="h-full">
@@ -567,7 +543,7 @@
 
             <div class="mt-48">
               <!-- Plan Button -->
-              <div class="absolute bottom-9 left-0 w-full text-center">
+              <div class="left-0 w-full text-center">
                 <a
                   href="#"
                   class="mx-auto inline-block w-2/3 rounded-full border-2 border-white bg-gradient-to-br from-blue-light to-blue py-5 text-sm font-bold text-white transition group-hover:from-white group-hover:to-white group-hover:text-blue group-hover:hover:from-transparent group-hover:hover:to-transparent group-hover:hover:text-white"
@@ -679,7 +655,7 @@
 
             <div class="mt-48">
               <!-- Plan Button -->
-              <div class="absolute bottom-9 left-0 w-full text-center">
+              <div class="left-0 w-full text-center">
                 <a
                   href="#"
                   class="mx-auto inline-block w-2/3 rounded-full border-2 border-white bg-gradient-to-br from-blue-light to-blue py-5 text-sm font-bold text-white transition group-hover:from-white group-hover:to-white group-hover:text-blue group-hover:hover:from-transparent group-hover:hover:to-transparent group-hover:hover:text-white"
@@ -824,9 +800,9 @@
               </div>
             </div>
 
-            <div class="mt-48">
+            <div class="mt-12">
               <!-- Plan Button -->
-              <div class="absolute bottom-9 left-0 w-full text-center">
+              <div class="left-0 w-full text-center">
                 <a
                   href="#"
                   class="mx-auto inline-block w-2/3 rounded-full border-2 border-white bg-gradient-to-br from-blue-light to-blue py-5 text-sm font-bold text-white transition group-hover:from-white group-hover:to-white group-hover:text-blue group-hover:hover:from-transparent group-hover:hover:to-transparent group-hover:hover:text-white"
@@ -838,366 +814,13 @@
           </div>
         </div>
       </div>
-
-      <!-- Yearly -->
-      <div
-        class="grid grid-cols-1 gap-[1.5rem] md:grid-cols-2 xl:grid-cols-3"
-        id="yearly-plans"
-      >
-        <!-- Plan 1 -->
-        <div
-          class="group relative rounded-[0.9375rem] p-9 shadow-xl transition-all hover:bg-gradient-to-r hover:from-blue-light hover:to-blue-dark hover:text-white"
-        >
-          <!-- Plan Heading -->
-          <h6 class="text-2xl font-bold">Pro</h6>
-          <!-- Plan Price -->
-          <h3 class="text-5xl font-bold text-blue group-hover:text-white">
-            $300
-            <span
-              class="relative -left-4 text-xs text-black group-hover:text-white"
-              >/year</span
-            >
-          </h3>
-          <!-- Plan Extension -->
-          <p class="text-xs">For Medium businessess</p>
-
-          <div
-            class="my-8 h-[0.0625rem] w-full bg-black opacity-20 group-hover:bg-white group-hover:opacity-70"
-          ></div>
-
-          <!-- Plan Items -->
-
-          <div class="flex flex-col gap-[1.5rem]">
-            <!-- Plan Item -->
-            <div class="flex items-center gap-[0.63rem]">
-              <svg
-                viewBox="0 0 10 8"
-                class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 4.625L4.25 6.5L8.75 1.5"
-                  class="fill-transparent stroke-white group-hover:stroke-blue"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="font-medium">3 Social profiles</p>
-            </div>
-
-            <!-- Plan Item -->
-            <div class="flex items-center gap-[0.63rem]">
-              <svg
-                viewBox="0 0 10 8"
-                class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 4.625L4.25 6.5L8.75 1.5"
-                  class="fill-transparent stroke-white group-hover:stroke-blue"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="font-medium">12 Team members</p>
-            </div>
-
-            <!-- Plan Item -->
-            <div class="flex items-center gap-[0.63rem]">
-              <svg
-                viewBox="0 0 10 8"
-                class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 4.625L4.25 6.5L8.75 1.5"
-                  class="fill-transparent stroke-white group-hover:stroke-blue"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="font-medium">5 Competitors per profile</p>
-            </div>
-          </div>
-
-          <div class="mt-48">
-            <!-- Plan Button -->
-            <div class="absolute bottom-9 left-0 w-full text-center">
-              <a
-                href="#"
-                class="mx-auto inline-block w-2/3 rounded-full border-2 border-white bg-gradient-to-br from-blue-light to-blue py-5 text-sm font-bold text-white transition group-hover:from-white group-hover:to-white group-hover:text-blue group-hover:hover:from-transparent group-hover:hover:to-transparent group-hover:hover:text-white"
-              >
-                Get Started
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Plan 2 -->
-        <div
-          class="group relative rounded-[0.9375rem] p-9 shadow-xl transition-all hover:bg-gradient-to-r hover:from-blue-light hover:to-blue-dark hover:text-white"
-        >
-          <!-- Plan Heading -->
-          <h6 class="text-2xl font-bold">Popular</h6>
-          <!-- Plan Price -->
-          <h3 class="text-5xl font-bold text-blue group-hover:text-white">
-            $600
-            <span
-              class="relative -left-4 text-xs text-black group-hover:text-white"
-              >/year</span
-            >
-          </h3>
-          <!-- Plan Extension -->
-          <p class="text-xs">For Medium businessess</p>
-
-          <div
-            class="my-8 h-[0.0625rem] w-full bg-black opacity-20 group-hover:bg-white group-hover:opacity-70"
-          ></div>
-
-          <!-- Plan Items -->
-
-          <div class="flex flex-col gap-[1.5rem]">
-            <!-- Plan Item -->
-            <div class="flex items-center gap-[0.63rem]">
-              <svg
-                viewBox="0 0 10 8"
-                class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 4.625L4.25 6.5L8.75 1.5"
-                  class="fill-transparent stroke-white group-hover:stroke-blue"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="font-medium">5 Social profiles</p>
-            </div>
-
-            <!-- Plan Item -->
-            <div class="flex items-center gap-[0.63rem]">
-              <svg
-                viewBox="0 0 10 8"
-                class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 4.625L4.25 6.5L8.75 1.5"
-                  class="fill-transparent stroke-white group-hover:stroke-blue"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="font-medium">12 Team members</p>
-            </div>
-
-            <!-- Plan Item -->
-            <div class="flex items-center gap-[0.63rem]">
-              <svg
-                viewBox="0 0 10 8"
-                class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 4.625L4.25 6.5L8.75 1.5"
-                  class="fill-transparent stroke-white group-hover:stroke-blue"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="font-medium">5 Competitors per profile</p>
-            </div>
-
-            <!-- Plan Item -->
-            <div class="flex items-center gap-[0.63rem]">
-              <svg
-                viewBox="0 0 10 8"
-                class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 4.625L4.25 6.5L8.75 1.5"
-                  class="fill-transparent stroke-white group-hover:stroke-blue"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="font-medium">Hashtags per profile</p>
-            </div>
-          </div>
-
-          <div class="mt-48">
-            <!-- Plan Button -->
-            <div class="absolute bottom-9 left-0 w-full text-center">
-              <a
-                href="#"
-                class="mx-auto inline-block w-2/3 rounded-full border-2 border-white bg-gradient-to-br from-blue-light to-blue py-5 text-sm font-bold text-white transition group-hover:from-white group-hover:to-white group-hover:text-blue group-hover:hover:from-transparent group-hover:hover:to-transparent group-hover:hover:text-white"
-              >
-                Get Started
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Plan 3 -->
-        <div
-          class="group relative rounded-[0.9375rem] p-9 shadow-xl transition-all hover:bg-gradient-to-r hover:from-blue-light hover:to-blue-dark hover:text-white"
-        >
-          <!-- Plan Heading -->
-          <h6 class="text-2xl font-bold">Popular</h6>
-          <!-- Plan Price -->
-          <h3 class="text-5xl font-bold text-blue group-hover:text-white">
-            $300
-            <span
-              class="relative -left-4 text-xs text-black group-hover:text-white"
-              >/year</span
-            >
-          </h3>
-          <!-- Plan Extension -->
-          <p class="text-xs">For Medium businessess</p>
-
-          <div
-            class="my-8 h-[0.0625rem] w-full bg-black opacity-20 group-hover:bg-white group-hover:opacity-70"
-          ></div>
-
-          <!-- Plan Items -->
-
-          <div class="flex flex-col gap-[1.5rem]">
-            <!-- Plan Item -->
-            <div class="flex items-center gap-[0.63rem]">
-              <svg
-                viewBox="0 0 10 8"
-                class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 4.625L4.25 6.5L8.75 1.5"
-                  class="fill-transparent stroke-white group-hover:stroke-blue"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="font-medium">3 Social profiles</p>
-            </div>
-
-            <!-- Plan Item -->
-            <div class="flex items-center gap-[0.63rem]">
-              <svg
-                viewBox="0 0 10 8"
-                class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 4.625L4.25 6.5L8.75 1.5"
-                  class="fill-transparent stroke-white group-hover:stroke-blue"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="font-medium">12 Team members</p>
-            </div>
-
-            <!-- Plan Item -->
-            <div class="flex items-center gap-[0.63rem]">
-              <svg
-                viewBox="0 0 10 8"
-                class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 4.625L4.25 6.5L8.75 1.5"
-                  class="fill-transparent stroke-white group-hover:stroke-blue"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="font-medium">5 Competitors per profile</p>
-            </div>
-            <!-- Plan Item -->
-            <div class="flex items-center gap-[0.63rem]">
-              <svg
-                viewBox="0 0 10 8"
-                class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 4.625L4.25 6.5L8.75 1.5"
-                  class="fill-transparent stroke-white group-hover:stroke-blue"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="font-medium">3 Social profiles</p>
-            </div>
-
-            <!-- Plan Item -->
-            <div class="flex items-center gap-[0.63rem]">
-              <svg
-                viewBox="0 0 10 8"
-                class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 4.625L4.25 6.5L8.75 1.5"
-                  class="fill-transparent stroke-white group-hover:stroke-blue"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="font-medium">12 Team members</p>
-            </div>
-
-            <!-- Plan Item -->
-            <div class="flex items-center gap-[0.63rem]">
-              <svg
-                viewBox="0 0 10 8"
-                class="h-5 w-5 rounded-full bg-blue p-1 group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 4.625L4.25 6.5L8.75 1.5"
-                  class="fill-transparent stroke-white group-hover:stroke-blue"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="font-medium">5 Competitors per profile</p>
-            </div>
-          </div>
-
-          <div class="mt-48">
-            <!-- Plan Button -->
-            <div class="absolute bottom-9 left-0 w-full text-center">
-              <a
-                href="#"
-                class="mx-auto inline-block w-2/3 rounded-full border-2 border-white bg-gradient-to-br from-blue-light to-blue py-5 text-sm font-bold text-white transition group-hover:from-white group-hover:to-white group-hover:text-blue group-hover:hover:from-transparent group-hover:hover:to-transparent group-hover:hover:text-white"
-              >
-                Get Started
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Testimonial Section -->
 
-    <section class="container !px-0">
-      <h5 class="px-4 text-center font-bold">
-        What people are saying about us
+    <section class="container !px-0" id="testimonials">
+      <h5 class="px-4 text-center font-bold" data-aos="fade-right">
+        See what others think about us
       </h5>
 
       <!-- Slider main container -->
@@ -1208,13 +831,15 @@
           <div class="swiper-slide p-4">
             <div
               class="h-full rounded-[1.25rem] p-4 shadow-lg xl:p-6"
-              data-aos="zoom-in"
+              data-aos="fade-up"
               data-aos-delay="150"
             >
               <img src="./assets/icons/Review.svg" alt="review" />
               <p class="mt-2 text-sm opacity-80 md:mt-4 xl:mt-8">
-                Equals transformed how we manage data. The built-in database
-                connections save us hours every week.
+                This platform has transformed how our team collaborates. The
+                intuitive interface and powerful features help us get more done
+                with less hassle. Highly recommend it to anyone looking for a
+                reliable SaaS solution.
               </p>
 
               <div
@@ -1236,13 +861,14 @@
           <div class="swiper-slide p-4">
             <div
               class="h-full rounded-[1.25rem] p-4 shadow-lg xl:p-6"
-              data-aos="zoom-in"
+              data-aos="fade-up"
               data-aos-delay="200"
             >
               <img src="./assets/icons/Review.svg" alt="review" />
               <p class="mt-2 text-sm opacity-80 md:mt-4 xl:mt-8">
-                Our marketing team is now more efficient! Automation features
-                help us generate and nurture leads with ease.
+                I was amazed at how quickly we were able to integrate the system
+                and start tracking meaningful insights. It made decision-making
+                faster and more data-driven. Customer support is also top-notch!
               </p>
 
               <div
@@ -1264,14 +890,105 @@
           <div class="swiper-slide p-4">
             <div
               class="h-full rounded-[1.25rem] p-4 shadow-lg xl:p-6"
-              data-aos="zoom-in"
+              data-aos="fade-up"
               data-aos-delay="300"
             >
               <img src="./assets/icons/Review.svg" alt="review" />
               <p class="mt-2 text-sm opacity-80 md:mt-4 xl:mt-8">
-                SaaSify’s analytics and visualization tools provide deep
-                insights into our business. The intuitive dashboard makes
-                tracking KPIs a breeze.
+                Using this service has streamlined our marketing campaigns and
+                improved our analytics tracking. The simplicity combined with
+                advanced tools makes it perfect for both beginners and
+                experienced users.
+              </p>
+
+              <div
+                class="mt-4 flex items-center gap-2 md:mt-8 xl:mt-12 xl:gap-5"
+              >
+                <img
+                  src="./assets/images/testimonial/srijan.jpg"
+                  alt="kartik-bansal"
+                  class="h-12 w-12"
+                />
+
+                <aside>
+                  <p class="text-lg font-bold">Srijan Sirasikar</p>
+                  <p class="mt-[0.19rem] text-xs">Bhadrak</p>
+                </aside>
+              </div>
+            </div>
+          </div>
+          <!-- Slides -->
+          <div class="swiper-slide p-4">
+            <div
+              class="h-full rounded-[1.25rem] p-4 shadow-lg xl:p-6"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <img src="./assets/icons/Review.svg" alt="review" />
+              <p class="mt-2 text-sm opacity-80 md:mt-4 xl:mt-8">
+                This platform has transformed how our team collaborates. The
+                intuitive interface and powerful features help us get more done
+                with less hassle. Highly recommend it to anyone looking for a
+                reliable SaaS solution.
+              </p>
+
+              <div
+                class="mt-4 flex items-center gap-2 md:mt-8 xl:mt-12 xl:gap-5"
+              >
+                <img
+                  src="./assets/images/testimonial/kartik.jpg"
+                  alt="kartik-bansal"
+                  class="h-12 w-12"
+                />
+
+                <aside>
+                  <p class="text-lg font-bold">Kartik Bansal</p>
+                  <p class="mt-[0.19rem] text-xxs">Kota, Rajasthan</p>
+                </aside>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide p-4">
+            <div
+              class="h-full rounded-[1.25rem] p-4 shadow-lg xl:p-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <img src="./assets/icons/Review.svg" alt="review" />
+              <p class="mt-2 text-sm opacity-80 md:mt-4 xl:mt-8">
+                I was amazed at how quickly we were able to integrate the system
+                and start tracking meaningful insights. It made decision-making
+                faster and more data-driven. Customer support is also top-notch!
+              </p>
+
+              <div
+                class="mt-4 flex items-center gap-2 md:mt-8 xl:mt-12 xl:gap-5"
+              >
+                <img
+                  src="./assets/images/testimonial/anil.jpg"
+                  alt="Anil Dvivedi"
+                  class="h-12 w-12"
+                />
+
+                <aside>
+                  <p class="text-lg font-bold">Anil Dvivedi</p>
+                  <p class="mt-[0.19rem] text-xxs">New Delhi</p>
+                </aside>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide p-4">
+            <div
+              class="h-full rounded-[1.25rem] p-4 shadow-lg xl:p-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <img src="./assets/icons/Review.svg" alt="review" />
+              <p class="mt-2 text-sm opacity-80 md:mt-4 xl:mt-8">
+                Using this service has streamlined our marketing campaigns and
+                improved our analytics tracking. The simplicity combined with
+                advanced tools makes it perfect for both beginners and
+                experienced users.
               </p>
 
               <div
@@ -1557,10 +1274,10 @@
           Copyright &copy;<span id="year"></span> Developed by
           <a
             class="underline hover:no-underline"
-            href="https://raddito.net/"
+            href="https://www.facebook.com/templatehearth"
             target="_blank"
             rel="nofollow"
-            >Raddito LLC</a
+            >Template Hearth</a
           >. Designed by
           <a
             href="https://www.figma.com/file/5Qocnzgr3m9770W0Z1nPHy/Landing-Page-UI-Kit-(Community)?type=design&node-id=521-161&mode=design&t=tmwUwVma4R4xO5NR-0"

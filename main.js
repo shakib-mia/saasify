@@ -1,6 +1,7 @@
 import Lenis from "lenis";
 import Swiper from "swiper";
 import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
 document.addEventListener("DOMContentLoaded", function () {
   AOS.init({ duration: 1000, once: true });
@@ -41,6 +42,10 @@ document.getElementById("play").addEventListener("click", () => {
 
 const swiper = new Swiper(".swiper", {
   speed: 400,
+  autoplay: {
+    delay: 3000,
+  },
+  modules: [Autoplay],
   breakpoints: {
     // When screen width is <= 480px (Mobile)
     600: {
@@ -74,47 +79,65 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.getElementById("navbar-container").style.color = "#fff";
+
 function createScrollDirectionTracker() {
   let scrollDirection = "up";
-  let lastScrollY = 0;
+  let lastScrollY = window.pageYOffset;
 
   function handleScroll() {
     const currentScrollY = window.pageYOffset;
+    const navbar = document.getElementById("navbar-container");
+    const navLinks = document.querySelectorAll("#navbar-container li a");
+    const signupButton = document.getElementById("signup-button");
 
+    // Determine direction
     if (currentScrollY > lastScrollY) {
       scrollDirection = "down";
     } else {
       scrollDirection = "up";
     }
-
     lastScrollY = currentScrollY;
-    if (scrollDirection === "up") {
-      if (window.scrollY > document.querySelector("header").clientHeight) {
-        document.getElementById("navbar-container").style.background = "#fff";
-        document.getElementById("navbar-container").style.boxShadow =
-          "0 0 10px #ccc";
-        document.getElementById("navbar-container").style.color = "black";
-        document.querySelector("#signup-button").classList.add("gradient");
-        document.querySelector("#signup-button").classList.remove("btn-white");
-      } else {
-        document.getElementById("navbar-container").style.background = "#fff0";
-        document.getElementById("navbar-container").style.boxShadow = "none";
 
-        document.getElementById("navbar-container").style.color = "white";
-        document.querySelector("#signup-button").classList.remove("gradient");
-        document.querySelector("#signup-button").classList.add("btn-white");
-      }
-      document.getElementById("navbar-container").style.top = "0";
-      document.getElementById("navbar-container").style.top = "0";
-      document.getElementById("navbar-container").style.transition =
-        "all 0.5s ease";
+    // Always: set background if scrolled
+    if (currentScrollY > 0) {
+      navbar.style.background = "#fff";
+      navbar.style.boxShadow = "0 0 10px #ccc";
+
+      navLinks.forEach((link) => {
+        link.style.color = "#0F0BC7"; // black text
+      });
+
+      signupButton.classList.add("gradient");
+      signupButton.classList.remove("btn-white");
+      navbar.style.color = "#0F0BC7";
     } else {
-      document.getElementById("navbar-container").style.top = "-10rem";
-      document.getElementById("navbar-container").style.transition =
-        "all 0.5s ease";
+      navbar.style.background = "transparent";
+      navbar.style.boxShadow = "none";
+
+      navLinks.forEach((link) => {
+        // link.style.color = "#fff"; // white text
+        if (window.innerWidth >= 768) {
+          link.style.color = "#fff";
+        } else {
+          link.style.color = "#0F0BC7";
+        }
+      });
+
+      signupButton.classList.remove("gradient");
+      signupButton.classList.add("btn-white");
+      navbar.style.color = "#fff";
     }
+
+    // Show/hide navbar based on direction
+    if (scrollDirection === "up") {
+      navbar.style.top = "0";
+    } else {
+      navbar.style.top = "-10rem";
+    }
+
+    navbar.style.transition = "all 0.3s ease";
   }
-  // console.log(scrollDirection);
 
   window.addEventListener("scroll", handleScroll);
 
