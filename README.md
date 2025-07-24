@@ -25,7 +25,7 @@ The platform simplifies marketing automation, lead nurturing, and provides easy 
 ## Credits
 
 1. Designed By [Kartik Bansal](<https://www.figma.com/file/5Qocnzgr3m9770W0Z1nPHy/Landing-Page-UI-Kit-(Community)?type=design&node-id=530-160&mode=design&t=7YuBkm5IBDEv7g8R-0>)
-2. Developed By [Md. Shakib Mia](https://md-shakib-mia.web.app/)
+2. Developed By [Template Hearth](https://www.facebook.com/templatehearth)
 
 # Available Scripts
 
